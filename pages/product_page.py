@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 class ProductPage(BasePage):
     def add_product_to_basket(self):
-        ADD_TO_BASKET = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
+        ADD_TO_BASKET = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET_BTN)
         ADD_TO_BASKET.click()
 
     def should_be_success_add_msg(self):

@@ -1,15 +1,10 @@
 from pages.main_page import MainPage
 from pages.login_page import LoginPage
 from pages.base_page import BasePage
-from pages.BasketPage import BasketPage
+from pages.basket_page import BasketPage
 import pytest
 
 link = "http://selenium1py.pythonanywhere.com/"
-
-
-def go_to_login_page(browser):
-    login_link = browser.find_element_by_css_selector("#login_link")
-    login_link.click()
 
 
 @pytest.mark.login_guest
